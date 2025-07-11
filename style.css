@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(78, 71, 255, 0.05);
+    background-color: #f5f8ff; 
 }
 
 #header {
@@ -27,6 +27,7 @@ body {
 .navbar h2 {
     color: #4E47FF;
     font-size: 36px;
+    font-family: 'Inter', sans-serif;
 }
 
 .navbar button {
@@ -36,6 +37,8 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'raleway', sans-serif;
+    font-weight: bold;
 }
 
 .navbar button:hover {
@@ -54,9 +57,10 @@ body {
 }
 
 .text h3 {
-    font-size: 36px;
+    font-size: 3em;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .text button {
@@ -67,6 +71,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-size: large;
+    width: 200px;
 }
 
 .text button:hover {
@@ -99,12 +105,14 @@ body {
     font-size: 3em;
     color: #000000;
     margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
 }
 
 #action p {
     font-size: 24px;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
+    font-family: 'inter', sans-serif;
 }
 
 #action button {
@@ -115,6 +123,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-family: 'inter', sans-serif;
 }
 
 #action button:hover {
@@ -138,12 +147,14 @@ body {
     font-size: 3em;
     color: #000000;
     margin-top: 0px;
+    font-family: 'raleway', sans-serif;
 }
 
 #productive-user h2 {
     font-size: 5em;
     color: #4E47FF;
     margin: 0px;
+    font-family: 'inter', sans-serif;
 }
 
 #productive-user .overview {
@@ -157,6 +168,7 @@ body {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.5);
     margin: 0;
+    font-family: 'inter', sans-serif;
 }
 
 #review {
@@ -170,11 +182,7 @@ body {
     margin-top: 0px;
 }
 
-#review h4 {
-    font-size: 1em;
-    color: #000000;
-    margin: 10px 0px 0px 0px;
-}
+
 
 #review .review-cards {
     text-align: left;
@@ -192,10 +200,27 @@ body {
     width: 300px;
 }
 
+#review .card .stars{
+    display: flex;
+    margin-bottom: 20px;
+}
+
 .card .user {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.card h4{
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #000000;
+    font-family: 'raleway', sans-serif;
+}
+
+.card p{
+    margin-bottom: 20px;
+    font-family: 'inter', sans-serif;
 }
 
 .card .user img {
@@ -207,7 +232,7 @@ body {
 
 .user .user-info p {
     font-size: 16px;
-    margin: 0;
+    margin-bottom: 0px;
 }
 
 .user .name {
@@ -229,11 +254,14 @@ body {
 #template h2 {
     font-size: 3em;
     color: #000000;
-    margin-top: 0px;
+    margin: 15px 0px;
+    font-family: 'Raleway', sans-serif;
 }
 
 #template p {
     color: rgb(106, 106, 106);
+    margin: 15px 0px;
+    font-family: 'inter', sans-serif;
 }
 
 #template button {
@@ -243,7 +271,9 @@ body {
     padding: 15px 25px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px;
+    margin: 15px 0px;
+    font-weight: bold;
+    font-family: 'inter', sans-serif;
 }
 
 #template button:hover {
@@ -257,7 +287,6 @@ body {
 }
 
 #feedback {
-    background-color: #f5f8ff; 
     padding: 100px 0;
     display: flex;
     justify-content: center;
@@ -275,26 +304,28 @@ body {
 }
 
 .feedback h2 {
-    font-size: 64px;
+    font-size: 5em;
     font-weight: 700;
     color: #000;
     line-height: 1.2;
     max-width: 400px;
+    font-family: 'raleway', sans-serif;
 }
 
 .feedback form {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     min-width: 300px;
+    font-family: 'inter', sans-serif;
 }
 
 .feedback form p {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
     color: #000;
-    margin-bottom: 5px;
+    margin-bottom: 5px 0px 2px 0px;
 }
 
 .feedback input,
@@ -302,7 +333,7 @@ body {
     width: 100%;
     padding: 15px 20px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 16px;
     background-color: white;
     outline: none;
@@ -319,8 +350,8 @@ body {
     border: none;
     padding: 15px;
     border-radius: 10px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 1.5em;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -332,7 +363,7 @@ body {
 
 
 footer {
-    height: 500px;
+    height: 400px;
     text-align: center;
     padding: 20px;
     background-color: #ffffff;
@@ -344,6 +375,7 @@ footer h2 {
     font-size: 5em;
     color: #4E47FF;
     margin-bottom: 30px;
+    font-family: 'inter', sans-serif;
 }
 
 footer p {
@@ -358,6 +390,6 @@ footer ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     color: #888888;
 }
